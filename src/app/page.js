@@ -5,9 +5,9 @@ export default function Home() {
     <>
     <nav>
       <ul>
-        <li>
-          about
-        </li>
+        <li>about</li>
+        <li>Products</li>
+        <li>Contact</li>
       </ul>
     </nav>
    <div>Hla</div>
