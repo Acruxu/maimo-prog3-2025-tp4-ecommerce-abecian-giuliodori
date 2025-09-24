@@ -3,8 +3,6 @@ import Image from "next/image"
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center px-[20px] pr-[25px] py-[5px] bg-[#FF2727]">
-      
-
       <div>
         <Image 
           src="/LogotipoBlanco.png"
