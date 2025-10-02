@@ -7,9 +7,8 @@ import DriversGrid from "./components/DriverGrid";
 export default function Home() {
   return (
    <>
-    <PrincipalCategories></PrincipalCategories>
-    <DriversGrid></DriversGrid>
-    <Footer></Footer>
+    <PrincipalCategories/>
+    <DriversGrid/>
     </>
   );
 }
