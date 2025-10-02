@@ -5,17 +5,17 @@ const categorias = [
   {
     nombre: "Hombre",
     img: "/hombre.png", // poné la foto en /public/categorias/
-    link: "/categorias/hombre",
+    link: "/categories/hombre",
   },
   {
     nombre: "Mujer",
     img: "/mujer.png",
-    link: "/categorias/mujer",
+    link: "/categories/mujer",
   },
   {
     nombre: "Equipos",
     img: "/equipos.png",
-    link: "/categorias/equipos",
+    link: "/categories/equipos",
   },
 ];
 
