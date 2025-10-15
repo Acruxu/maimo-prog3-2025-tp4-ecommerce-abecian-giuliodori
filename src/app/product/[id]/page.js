@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-// 🔹 Simulamos data (ideal luego sacarlo de ProductsData.js)
+
 const productos = [
   {
     id: 1,
@@ -31,7 +31,7 @@ export default function ProductPage() {
   return (
     <main className="min-h-screen bg-black text-white px-6 md:px-20 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Galería de imágenes */}
+   
         <div className="grid grid-cols-2 gap-4">
           {product.imgs.map((img, index) => (
             <div key={index} className="relative w-full h-64">
@@ -45,7 +45,7 @@ export default function ProductPage() {
           ))}
         </div>
 
-        {/* Info del producto */}
+
         <div className="flex flex-col justify-center">
           <h1 className="text-3xl font-bold mb-4">{product.nombre}</h1>
           <p className="text-xl text-gray-300 mb-6">Price {product.precio}</p>
@@ -70,7 +70,7 @@ export default function ProductPage() {
         </div>
       </div>
 
-      {/* Botón para volver a categorías */}
+
       <div className="mt-10">
         <Link
           href="/categories/category"
