@@ -4,7 +4,7 @@ import Link from "next/link";
 const categorias = [
   {
     nombre: "Hombre",
-    img: "/hombre.png", // poné la foto en /public/categorias/
+    img: "/hombre.png", 
     link: "/categories/hombre",
   },
   {

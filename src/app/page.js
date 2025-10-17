@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import DriversGrid from "./components/DriverGrid";
 
+
 export default function Home() {
   return (
    <>

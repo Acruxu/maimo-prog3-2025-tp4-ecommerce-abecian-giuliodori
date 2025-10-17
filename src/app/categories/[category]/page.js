@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// 🔹 Productos de prueba usando tus imágenes de /public
+
 const productos = [
   { id: 1, nombre: "Remera Hombre", categoria: "hombre", subcategoria: "torso", img: "/hombre.png" },
   { id: 2, nombre: "Pantalón Hombre", categoria: "hombre", subcategoria: "piernas", img: "/lawson.png" },
@@ -18,18 +18,18 @@ const productos = [
   { id: 8, nombre: "Remera Williams", categoria: "equipos", subcategoria: "torso", img: "/albon.png" },
 ];
 
-// 🔹 Opciones de categorías y subcategorías
+
 const categorias = ["hombre", "mujer", "equipos"];
 const filtrosSidebar = ["torso", "piernas", "gorras"];
 
 export default function CategoryPage() {
-  const [categoria, setCategoria] = useState("hombre"); // por defecto "hombre"
+  const [categoria, setCategoria] = useState("hombre"); 
   const [filtro, setFiltro] = useState(null);
 
-  // Filtrar por categoría
+
   let productosFiltrados = productos.filter((p) => p.categoria === categoria);
 
-  // Si hay filtro aplicado, refinar más
+
   if (filtro) {
     productosFiltrados = productosFiltrados.filter(
       (p) => p.subcategoria === filtro
@@ -38,7 +38,7 @@ export default function CategoryPage() {
 
   return (
     <main className="min-h-screen bg-black text-white flex px-6 md:px-12 py-10">
-      {/* Sidebar */}
+  
       <aside className="w-1/4 pr-6 border-r border-gray-700">
         <h2 className="text-xl font-bold mb-6">Categorías</h2>
         <ul className="space-y-4">
@@ -47,7 +47,7 @@ export default function CategoryPage() {
               <button
                 onClick={() => {
                   setCategoria(c);
-                  setFiltro(null); // reset filtro al cambiar de categoría
+                  setFiltro(null); 
                 }}
                 className={`block w-full text-left px-4 py-2 rounded-md ${
                   categoria === c
@@ -88,7 +88,7 @@ export default function CategoryPage() {
         </ul>
       </aside>
 
-      {/* Grid de productos */}
+
       <section className="w-3/4 pl-6">
         <h2 className="text-2xl font-bold mb-6 capitalize">
           {categoria} {filtro ? `- ${filtro}` : ""}
