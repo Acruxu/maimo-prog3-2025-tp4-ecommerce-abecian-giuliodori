@@ -59,7 +59,7 @@ export default function DriversGrid() {
         {drivers.map((driver) => (
           <div
             key={driver.id}
-            className="bg-[#2c2c2c] text-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition"
+            className="bg-[#2c2c2c] text-white rounded-[0.2vw] overflow-hidden shadow-md hover:scale-105 transition"
           >
             <div className="relative w-full h-80">
               <Image

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ShopContext from "../contexts/ShopContext"
 
 const Navbar = () => {
   return (
@@ -16,29 +17,31 @@ const Navbar = () => {
     <input
     type="text"
     placeholder="Buscar..."
-    className="w-[60%] max-w-md px-4 py-2 rounded-xl outline-none text-black placeholder-gray-500 bg-white border border-#111111 shadow-sm focus:ring-2 focus:ring-[#BB2026]"
+    className="w-[60%] max-w-md px-4 py-2 rounded-[10vw] outline-none placeholder-gray-500 bg-white border border-#111111 shadow-sm focus:ring-2 focus:ring-[#BB2026]"
       />
       </div>
       <nav>
         <ul className="flex justify-end items-center gap-[30px] text-white">
           <li className="list-none font-[] ">
-            <a className="text-xl border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 "  href="#">Home</a>
+            <a className="text-base border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 "  href="#">Inicio</a>
           </li>
           <li>
-            <a className="text-xl border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 "  href="#">My account</a>
+            <a className="text-base border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 "  href="#">Mi cuenta</a>
           </li>
           <li>
-            <a className="text-xl border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 "  href="#">Language</a>
+            <a className="text-base border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 "  href="#">Lenguaje</a>
           </li>
           <li>
-            <a className="text-xl border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 " href="#">My orders</a>
+            <a className="text-base border-b-2 border-transparent hover:border-[#F4F4F4] hover:border-opacity-1 pb-2 " href="#">Carrito</a>
+      
           </li>
           <li>
             <a href="#">
               <Image 
+            
                 src="/Carrito.png" 
-                width={45} 
-                height={45} 
+                width={35}
+                height={35}
                 alt="Carrito" 
               />
             </a>
